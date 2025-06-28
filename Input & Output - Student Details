@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        String Name=sc.nextLine();
+        int age=sc.nextInt();
+        float CGPA=sc.nextFloat();
+        char Grade=sc.next().charAt(0);
+        CGPA = (float)((int)(CGPA * 100)) / 100;     //used to avoid the rounding off the decimal value.
+        
+        System.out.println("Name: "+Name);
+        System.out.println("Age: "+age);
+        System.out.println("CGPA: "+CGPA);
+        System.out.println("Grade: "+Grade);
+    }
+}
